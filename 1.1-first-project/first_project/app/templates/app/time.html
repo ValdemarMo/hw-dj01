@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time</title>
+</head>
+<body>
+  <h1>Time</h1>
+  <h2> {{}}</h2>
+</body>
+    {% for title, url in pages.items %}
+        <a href="{{ url }}">{{ title }}</a>
+        <br>
+    {% endfor %}
+</html>
