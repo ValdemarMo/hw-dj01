@@ -41,7 +41,7 @@ def dish(request, name):
     recipe = {}
     for key, value in dish.items():
         recipe[key] = round(value * servings, 2)
-    context = {'recipe': recipe}
+    context = {"name": name, "count": servings, 'recipe': recipe}
     return render(request, template_name, context)
 
 # _____________________________________________________________
